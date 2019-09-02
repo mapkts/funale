@@ -1,0 +1,26 @@
+sudo: false
+
+# Run tests against latest node
+language: node_js
+node_js:
+  - node
+
+# Speed up builds by caching node_modules
+cache:
+  directories:
+  - node_modules
+
+# Run tests on master branch only
+branches:
+  only:
+  - master
+
+# Custom the installation phrase
+install:
+  - npm install
+
+# Run tests
+script:
+  - npm test
+
+
