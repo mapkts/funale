@@ -10,6 +10,7 @@ import pipe from './pipe'
  * @example
  *
  * import { compose } from 'funale'
+ *
  * const sum = (a, b) => a + b
  * const inc = x => x + 1
  * const double = x => x * 2
