@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 import curry from './curry'
 
 describe('curry', () => {

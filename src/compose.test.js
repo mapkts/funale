@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 import compose from './compose'
 
 describe('compose', () => {

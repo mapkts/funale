@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 import identity from './identity'
 
 describe('identity', () => {
