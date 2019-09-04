@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 import pipe from './pipe'
 
 describe('pipe', () => {
