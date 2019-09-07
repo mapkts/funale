@@ -9,9 +9,9 @@ import _curry2 from './internal/_curry2'
  * @return {Boolean}
  * @example
  *
- * import { equals } from 'funale'
+ * import { is } from 'funale'
  *
- * equals('abc', 'abc') // true
+ * is('abc', 'abc') // true
  */
 const is = _curry2((x, y) => ( x === y ? x !== 0 || 1 / x === 1 / y : x !== x && y !== y ))
 export default is
