@@ -13,5 +13,5 @@ import _curry2 from './internal/_curry2'
  *
  * equals('abc', 'abc') // true
  */
-const equals = _curry2((x, y) => ( x === y ? x !== 0 || 1 / x === 1 / y : x !== x && y !== y ))
-export default equals
+const is = _curry2((x, y) => ( x === y ? x !== 0 || 1 / x === 1 / y : x !== x && y !== y ))
+export default is
