@@ -1,7 +1,8 @@
 import _curry2 from './internal/_curry2'
+import _is from './internal/_is'
 
 /**
- * A curried version of ES6 Object.is
+ * A curried version internal _is function.
  *
  * @sig a -> b -> Boolean
  * @param {*} a
@@ -13,5 +14,5 @@ import _curry2 from './internal/_curry2'
  *
  * is('abc', 'abc') // true
  */
-const is = _curry2((x, y) => ( x === y ? x !== 0 || 1 / x === 1 / y : x !== x && y !== y ))
+const is = _curry2(_is)
 export default is
