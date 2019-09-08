@@ -11,10 +11,10 @@ import _curry2 from './_curry2'
 export default function _curry3(fn) {
   return function f3(a, b, c) {
     switch (arguments.length) {
-    case 0: return f3
-    case 1: return _curry2((_b, _c) => fn(a, _b, _c))
-    case 2: return _curry1((_c) => fn(a, b, _c))
-    default: return fn(a, b, c)
+      case 0: return f3
+      case 1: return _curry2((_b, _c) => fn(a, _b, _c))
+      case 2: return _curry1((_c) => fn(a, b, _c))
+      default: return fn(a, b, c)
     }
   }
 }
