@@ -4,7 +4,7 @@ import _type from './internal/_type'
 /**
  * Returns the type of the value in lower-case
  *
- * @sig * -> String
+ * @sig type :: * -> String
  * @param {*} val The value to check
  * @return {String} The type of the value
  * @example

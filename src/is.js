@@ -4,7 +4,7 @@ import _is from './internal/_is'
 /**
  * A curried version internal _is function.
  *
- * @sig a -> b -> Boolean
+ * @sig is :: a -> b -> Boolean
  * @param {*} a
  * @param {*} b
  * @return {Boolean}

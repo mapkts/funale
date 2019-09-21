@@ -3,7 +3,7 @@ import _curry2 from './internal/_curry2'
 /**
  * Returns `true` if the second argument is greater than or equal to the first argument; `false` otherwise.
  *
- * @sig Ord a => a -> a -> Boolean
+ * @sig gte :: Ord a => a -> a -> Boolean
  * @param {*} a
  * @param {*} b
  * @return {Boolean}
