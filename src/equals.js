@@ -1,5 +1,5 @@
 import _curry2 from './internal/_curry2'
-import _equal from './internal/_equal'
+import _equals from './internal/_equals'
 
 /**
  * Returns `true` if its arguments are equivalent, `false` otherwise. Handles
@@ -21,5 +21,5 @@ import _equal from './internal/_equal'
  * const b = {}; b.v = b
  * equal(a, b) // true
  */
-const equal = _curry2((a, b) => _equal(a, b, [], []))
-export default equal
+const equals = _curry2((a, b) => _equals(a, b, [], []))
+export default equals

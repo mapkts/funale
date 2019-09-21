@@ -4,7 +4,7 @@
 import _is from './_is'
 import _type from './_type'
 
-function _equal(a, b, aStack, bStack) {
+function _equals(a, b, aStack, bStack) {
   if ( _is(a, b) ) return true
 
   const typeA = _type(a)
@@ -39,7 +39,7 @@ function _equal(a, b, aStack, bStack) {
     case 'array':
       if (a.length !== b.length) return false
       for (let i = 0; i < a.length; i++) {
-        if ( !_equal(a[i], b[i], aStack, bStack) ) return false
+        if ( !_equals(a[i], b[i], aStack, bStack) ) return false
       }
       return true
     case 'object':
@@ -48,7 +48,7 @@ function _equal(a, b, aStack, bStack) {
       }
       for (const j in b) {
         if ( !a.hasOwnProperty(j) ) return false
-        if ( !_equal(a[j], b[j], aStack, bStack) ) return false
+        if ( !_equals(a[j], b[j], aStack, bStack) ) return false
       }
       return true
     case 'error':
@@ -57,4 +57,4 @@ function _equal(a, b, aStack, bStack) {
       return a === b
   }
 }
-export default _equal
+export default _equals
