@@ -10,7 +10,7 @@ import _equals from './internal/_equals'
  * @return {Array} A duplicate-free array
  * @example
  *
- * import uniq from 'funale'
+ * import { uniq } from 'funale'
  *
  * uniq([1, 2, 1]) // [1, 2]
  * uniq([NaN, NaN, [1], [1], { x: 1 }, { x: 1 }]) // [NaN, [1], { x: 1 }]
