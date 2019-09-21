@@ -47,7 +47,6 @@
         "prefer-template": "error",
         "template-curly-spacing": ["error", "never"],
         "wrap-iife": ["error", "inside"],
-        "no-loop-func": "error",
         "prefer-rest-params": "warn",
         "no-new-func": "error",
         "space-before-blocks": "error",
@@ -71,6 +70,6 @@
         "no-new-wrappers": "error",
         "new-cap": "error",
         "camelcase": "error",
-        "no-console": "off",
+        "no-console": "off"
     }
 }
