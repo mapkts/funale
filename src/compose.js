@@ -4,7 +4,7 @@ import pipe from './pipe'
  * Performs right-to-left function composition. The last argument
  * may have any arity; the remaining arguments must be unary.
  *
- * @sig ((y -> z), (x -> y), ..., (o -> p), ((a, b, ..., n) -> o)) -> ((a, b, ..., n) -> z)
+ * @sig compose :: ((y -> z), (x -> y), ..., (o -> p), ((a, b, ..., n) -> o)) -> ((a, b, ..., n) -> z)
  * @param {...Function} functions
  * @return {Function} A composed function
  * @example

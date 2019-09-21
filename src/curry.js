@@ -1,7 +1,7 @@
 /**
  * Returns a curried version of the provided function.
  *
- * @sig ((a, b, ...) -> c) -> a -> b -> ... -> c
+ * @sig curry :: ((a, b, ...) -> c) -> a -> b -> ... -> c
  * @param {Function} func The function to curry
  * @param {...Args=} parameters Parameters to be partially applied
  * @return {Function} A curried function

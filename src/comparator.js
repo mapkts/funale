@@ -4,7 +4,7 @@ import _curry1 from './internal/_curry1'
  * Makes a comparator function that reports whether
  * the first argument is less than the second.
  *
- * @sig ((a, b) -> Boolean) -> ((a, b) -> number)
+ * @sig comparator :: ((a, b) -> Boolean) -> ((a, b) -> number)
  * @param {Function} predicate A two-arity function that returns `true` if firstArg < secondArg, `false` otherwise
  * @return {Function} A two-arity function that returns `-1` if firstArg < secondArg, `1` if firstArg > secondArg, `0` otherwise
  * @example
