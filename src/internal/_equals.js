@@ -4,7 +4,7 @@
 import _is from './_is'
 import _type from './_type'
 
-function _equals(a, b, aStack, bStack) {
+export default function _equals(a, b, aStack, bStack) {
   if ( _is(a, b) ) return true
 
   const typeA = _type(a)
@@ -57,4 +57,4 @@ function _equals(a, b, aStack, bStack) {
       return a === b
   }
 }
-export default _equals
+

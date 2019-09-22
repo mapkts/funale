@@ -6,7 +6,7 @@
  * @return {Function} A curried function
  */
 export default function _curry1(fn) {
-  return function f1(a) {
+  return function f1() {
     return arguments.length ? fn.apply(this, arguments) : f1
   }
 }
