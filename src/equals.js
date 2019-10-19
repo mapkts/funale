@@ -5,7 +5,7 @@ import _equals from './internal/_equals'
  * Returns `true` if its arguments are equivalent, `false` otherwise. Handles
  * cyclical data structures.
  *
- * @sig equals :: a -> b -> Boolean
+ * @sig a -> b -> Boolean
  * @param {*} a
  * @param {*} b
  * @return {Boolean}

@@ -2,7 +2,7 @@
  * Performs left-to-right function composition. The first argument
  * may have any arity; the remaining arguments must be unary.
  *
- * @sig pipe :: (((a, b, ..., n) -> o), (o -> p), ..., (x -> y), (y -> z)) -> ((a, b, ..., n) -> z)
+ * @sig (((a, b, ..., n) -> o), (o -> p), ..., (x -> y), (y -> z)) -> ((a, b, ..., n) -> z)
  * @param {...Function} functions
  * @return {Function} A composed function
  * @example

@@ -13,15 +13,6 @@
         "indent": ["error", 2, { "SwitchCase": 1 }],
         "semi": ["error", "never"],
         "quotes": ["error", "single"],
-        "capitalized-comments": [
-            "error",
-            "always",
-            {
-              "ignorePattern": "ignore|ignored",
-              "ignoreInlineComments": true,
-              "ignoreConsecutiveComments": true
-            }
-        ],
         "comma-dangle": ["error", "always-multiline"],
         "eol-last": "error",
         "func-call-spacing": "error",
@@ -48,7 +39,6 @@
         "wrap-iife": ["error", "inside"],
         "no-new-func": "error",
         "space-before-blocks": "error",
-        "no-param-reassign": "error",
         "prefer-arrow-callback": "error",
         "arrow-spacing": ["error", { "before": true, "after": true }],
         "no-confusing-arrow": ["error", {"allowParens": true}],
@@ -61,7 +51,6 @@
         "eqeqeq": ["error", "smart"],
         "space-infix-ops": "error",
         "no-else-return": "error",
-        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
         "padded-blocks": ["error", "never"],
         "object-curly-spacing": ["error", "always"],
         "no-new-wrappers": "error",
