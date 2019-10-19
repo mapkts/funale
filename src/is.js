@@ -2,9 +2,9 @@ import _curry2 from './internal/_curry2'
 import _is from './internal/_is'
 
 /**
- * A curried version internal _is function.
+ * A curried version of internal `_is` function.
  *
- * @sig is :: a -> b -> Boolean
+ * @sig a -> b -> Boolean
  * @param {*} a
  * @param {*} b
  * @return {Boolean}
