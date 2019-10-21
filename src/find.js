@@ -10,7 +10,7 @@ import _dispatch from './internal/_dispatch'
  * @sig (a -> Boolean) -> [a] -> a | undefined
  * @param {Function} predicate
  * @param {Array} list
- * @return {*} The element found, or `undefined`
+ * @return {*} The element found, or `undefined` if no matches
  * @example
  *
  * import { find } from 'funale'

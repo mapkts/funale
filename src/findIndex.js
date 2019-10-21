@@ -7,7 +7,7 @@ import _curry2 from './internal/_curry2'
  * @sig (a -> Boolean) -> [a] -> Number
  * @param {Function} predicate
  * @param {Array} list
- * @return {Number} The index of the element found, or `-1`
+ * @return {Number} The index of the element found, or `-1` if no matches
  * @example
  *
  * import { findIndex } from 'funale'

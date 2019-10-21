@@ -2,7 +2,7 @@ import _curry2 from './internal/_curry2'
 import _is from './internal/_is'
 
 /**
- * A curried version of internal `_is` function.
+ * A curried version of `Object.is` function.
  *
  * @sig a -> b -> Boolean
  * @param {*} a
