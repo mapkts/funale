@@ -1,7 +1,7 @@
 import _curry2 from './internal/_curry2'
 
 /**
- * Returns a curried version of `Array.sort` method.
+ * Returns a curried version of `Array.prototype.sort` method.
  * Please note that it returns a **copy** of the list rather than modifying the original.
  *
  * @sig ((a, a) -> Number) -> [a] -> [a]

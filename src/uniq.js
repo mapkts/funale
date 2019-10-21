@@ -3,7 +3,7 @@ import _equals from './internal/_equals'
 
 /*
  * Returns a duplicate-free version of the provided array. Funale
- * equals is used to determine equality.
+ * `equals` is used to determine equality.
  *
  * @sig [a] -> [a]
  * @param {Array} list

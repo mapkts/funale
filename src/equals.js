@@ -2,8 +2,7 @@ import _curry2 from './internal/_curry2'
 import _equals from './internal/_equals'
 
 /**
- * Returns `true` if its arguments are equivalent, `false` otherwise. Handles
- * cyclical data structures.
+ * Returns `true` if its arguments are equivalent, `false` otherwise.
  *
  * @sig a -> b -> Boolean
  * @param {*} a
