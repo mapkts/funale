@@ -47,7 +47,6 @@
         "no-iterator": "error",
         "generator-star-spacing": ["error", {"before": false, "after": true}],
         "dot-notation": "error",
-        "one-var": ["error", "never"],
         "eqeqeq": ["error", "smart"],
         "space-infix-ops": "error",
         "no-else-return": "error",
