@@ -1,5 +1,5 @@
 import _curry2 from './internal/_curry2'
-import _concat from './internal/_concat'
+import _combine from './internal/_combine'
 import _reduce from './internal/_reduce'
 import map from './map'
 
@@ -32,6 +32,6 @@ const ap = _curry2((applyF, applyX) => {
     ? applyF.ap(applyX)
     : typeof applyF === 'function'
       ? (x) => applyF(x)(applyX(x))
-      : _reduce((acc, f) => _concat(acc, map(f, applyX)), [], applyF)
+      : _reduce((acc, f) => _combine(acc, map(f, applyX)), [], applyF)
 })
 export default ap

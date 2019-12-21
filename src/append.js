@@ -1,5 +1,5 @@
 import _curry2 from './internal/_curry2'
-import _concat from './internal/_concat'
+import _combine from './internal/_combine'
 
 /**
  * Returns a new list containing the elements of the given list, followed by
@@ -16,6 +16,6 @@ import _concat from './internal/_concat'
  * append('c', ['a', 'b']) // ['a', 'b', 'c']
  */
 const append = _curry2((el, list) => {
-  return _concat(list, [el])
+  return _combine(list, [el])
 })
 export default append

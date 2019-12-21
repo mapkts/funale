@@ -1,18 +1,13 @@
-export default function _concat(a1, a2) {
-  a1 = a1 || []
-  a2 = a2 || []
-  let idx
-  const len1 = a1.length
-  const len2 = a2.length
-  const rv = []
+import _type from './_type'
+import _isFunction from './_isFunction'
 
-  idx = -1
-  while (++idx < len1) {
-    rv[rv.length] = a1[idx]
-  }
-  idx = -1
-  while (++idx < len2) {
-    rv[rv.length] = a2[idx]
-  }
-  return rv
+export default function _concat(a, b) {
+  const typeA = _type(a)
+  const typeB = _type(b)
+
+  if (typeA !== typeB) throw new TypeError('two arguments are not of the same type')
+  if (typeA === 'array') return b.concat(a)
+  if (typeA === 'string') return b + a
+  if (b != null && _isFunction(b.concat)) return b.concat(a)
+  throw new TypeError('concat method not found')
 }
