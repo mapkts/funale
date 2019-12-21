@@ -1,6 +1,5 @@
 import _curry2 from './internal/_curry2'
-import _type from './internal/_type'
-import _isFunction from './internal/_isFunction'
+import _concat from './internal/_concat'
 
 /**
  * Concatenating the given lists or strings (both arguments must be of the same type).
@@ -19,14 +18,5 @@ import _isFunction from './internal/_isFunction'
  * concat([3, 4], [1, 2]) // [1, 2, 3, 4]
  * concat('world')('hello ') // 'hello world'
  */
-const concat = _curry2((a, b) => {
-  const typeA = _type(a)
-  const typeB = _type(b)
-
-  if (typeA !== typeB) throw new TypeError('two arguments are not of the same type')
-  if (typeA === 'array') return b.concat(a)
-  if (typeA === 'string') return b + a
-  if (b != null && _isFunction(b.concat)) return b.concat(a)
-  throw new TypeError('concat method not found')
-})
+const concat = _curry2(_concat)
 export default concat
