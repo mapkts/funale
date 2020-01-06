@@ -1,5 +1,23 @@
 {
   "presets": [
-    ["@babel/preset-env", { "targets": { "ie": "11" }, "modules": false }],
-  ]
+    ["@babel/preset-env", { "targets": { "node": "current" } }]
+  ],
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          { "targets": { "node": "current" }, "modules": false }
+        ]
+      ]
+    },
+    "umd": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          { "targets": { "ie": "11" }, "modules": false }
+        ]
+      ]
+    }
+  }
 }
