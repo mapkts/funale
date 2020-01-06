@@ -2234,6 +2234,28 @@
   var init = slice(0, -1);
 
   /**
+   * Inserts the supplied element into the list, at the specified `index`.
+   *
+   * @sig Number -> a -> [a] -> [a]
+   * @param {Number} index The position to insert the element
+   * @param {*} elt The element to insert into the Array
+   * @param {Array} list The list to insert into
+   * @return {Array} A new Array with `elt` inserted at `index`.
+   * @example
+   *
+   * import { insert } from 'funale'
+   *
+   * insert(2, 'x', [1,2,3,4]) //=> [1,2,'x',3,4]
+   */
+
+  var insert = _curry3(function (idx, elt, list) {
+    idx = idx < list.length && idx >= 0 ? idx : list.length;
+    var rv = Array.prototype.slice.call(list, 0);
+    rv.splice(idx, 0, elt);
+    return rv;
+  });
+
+  /**
    * Combines two lists into a set composed of those elements common to both lists.
    *
    * @sig [*] -> [*] -> [*]
@@ -3621,6 +3643,7 @@
   exports.infixModulo = infixModulo;
   exports.infixSubtract = infixSubtract;
   exports.init = init;
+  exports.insert = insert;
   exports.intersection = intersection;
   exports.is = is;
   exports.join = join;

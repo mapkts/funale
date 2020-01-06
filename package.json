@@ -4,6 +4,11 @@
   "description": "A Lightweight utility library for functional JavaScript",
   "main": "dist/funale.js",
   "module": "esm/index.js",
+  "files": [
+    "src",
+    "dist",
+    "esm"
+  ],
   "scripts": {
     "build": "npm run build:umd && npm run build:min && npm run build:esm",
     "build:umd": "cross-env rollup -c -o dist/funale.js",
