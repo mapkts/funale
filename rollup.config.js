@@ -7,8 +7,6 @@ const config = {
   output: [
     {
     file: 'dist/funale.umd.js',
-  output: {
-    file: 'dist/funale.js',
     format: 'umd',
     name: 'F',
     exports: 'named',
@@ -17,11 +15,6 @@ const config = {
   plugins: [
     resolve(),
     babel({ presets: [['@babel/preset-env', { targets: { ie: '11' } }]] }),
-  plugins: [
-    resolve(),
-    babel({
-      exclude: 'node_modules/**',
-    }),
   ],
 }
 
@@ -35,7 +28,6 @@ if (process.env.NODE_ENV === 'production') {
       },
       warnings: false,
     })
-    uglify()
   )
 }
 
