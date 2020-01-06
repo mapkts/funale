@@ -15,12 +15,6 @@
     "build:esm": "cross-env BABEL_ENV=es babel src --out-dir esm",
     "build:min": "cross-env NODE_ENV=production rollup -c -o dist/funale.min.js",
     "test": "jest src"
-  "scripts": {
-    "build": "npm run build:umd && npm run build:umd:min",
-    "build:umd": "cross-env rollup -c -o dist/funale.js",
-    "build:umd:min": "cross-env NODE_ENV=production rollup -c -o dist/funale.min.js",
-    "test": "jest"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mapkts/funale.git"
